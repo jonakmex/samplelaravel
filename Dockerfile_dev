@@ -1,0 +1,2 @@
+# docker run -it -p 8000:8000 -v /Users/c12802/Documents/projects/docker/laravel_2/agaveazul:/agaveazul sample/laraveldev bash
+FROM composer
