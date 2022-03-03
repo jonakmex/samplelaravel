@@ -1,2 +1,3 @@
-# docker run -it -p 8000:8000 -v /Users/c12802/Documents/projects/docker/laravel_2/agaveazul:/agaveazul sample/laraveldev bash
+# docker run -it -p 8000:8000 -v /Users/c12802/Documents/projects/docker/laravel_2/agaveazul:/agaveazul --network bridge sample/laraveldev bash
 FROM composer
+RUN docker-php-ext-install pdo pdo_mysql

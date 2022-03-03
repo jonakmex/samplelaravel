@@ -21,6 +21,8 @@
         </style>
     </head>
     <body class="antialiased">
-        Hello World
+        {{
+            phpinfo();
+        }}
     </body>
 </html>

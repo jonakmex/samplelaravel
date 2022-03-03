@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    Saludos {{$nombre}}
-    {{phpinfo()}}
+    El catalogo {{$catalogo->description}} creado con exito!
 </body>
 </html>

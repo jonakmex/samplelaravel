@@ -7,7 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    Saludos {{$nombre}}
-    {{phpinfo()}}
+    <form method="POST" action="{{ route('catalogo.create') }}">
+        {{ csrf_field () }}
+        <input type="text" id="description" name="description" />
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>

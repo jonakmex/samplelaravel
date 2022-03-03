@@ -18,3 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/saluda', ['uses' =>'App\Http\Controllers\SaludaController@execute']);
+Route::get('/catalogo', function(){
+    return view('catalogo.create');
+});
+
+Route::post('/catalogo',['uses' =>'App\Http\Controllers\CatalogoController@create'])->name('catalogo.create'); // Formulario
